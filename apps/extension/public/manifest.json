@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Reel Analyzer",
+  "version": "1.0.0",
+  "description": "Analyze Instagram Reels from a popup.",
+  "action": {
+    "default_title": "Reel Analyzer",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:4000/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.instagram.com/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ]
+}
