@@ -1,5 +1,6 @@
 export type AnalyzeReelRequest = {
   reelUrl: string;
+  devAudioPath?: string;
 };
 
 export type AnalyzeReelResponse = {
